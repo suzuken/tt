@@ -1,0 +1,15 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.zendframework.com/"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "piece/stagehand-testrunner": "3.6.*"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}
