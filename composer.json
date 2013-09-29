@@ -11,5 +11,10 @@
     },
     "config": {
         "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tt\\Timer": ["lib/"]
+        }
     }
 }
