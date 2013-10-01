@@ -5,10 +5,9 @@ php:
   - "5.3"
 before_script:
   - make install-dev
-  - php composer.phar install
 script: make test
 notifications:
   emails:
     - suzuken326@gmail.com
-  on_success: always # default: change
+  on_success: change
   on_failure: always
