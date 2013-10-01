@@ -1,0 +1,13 @@
+language: php
+php:
+  - "5.5"
+  - "5.4"
+  - "5.3.3"
+before_script:
+  - make install-dev
+script: make test
+notifications:
+  emails:
+    - suzuken326@gmail.com
+  on_success: change
+  on_failure: always
