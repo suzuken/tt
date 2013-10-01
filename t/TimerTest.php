@@ -1,7 +1,4 @@
 <?php
-require_once __DIR__. "/../vendor/autoload.php";
-
-use Tt\Timer;
 
 class TimerTest extends PHPUnit_Framework_TestCase
 {
@@ -11,7 +8,7 @@ class TimerTest extends PHPUnit_Framework_TestCase
 
     public function test()
     {
-        $t = new Timer();
+        $t = new Tt\Timer();
         $this->assertEquals($t->plain(), "hello world.");
     }
 
