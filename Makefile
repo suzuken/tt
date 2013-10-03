@@ -11,6 +11,10 @@ install-composer:
 
 install-dev:
 	$(PHP_BIN) composer.phar install --dev
+	$(PHP_BIN) vendor/bin/testrunner compile -p vendor/autoload.php
 
 test:
 	vendor/bin/phpunit --colors ./t
+
+testrunner:
+	/bin/sh t/testrunner.sh
