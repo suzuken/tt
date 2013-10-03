@@ -14,7 +14,7 @@ install-dev:
 	$(PHP_BIN) vendor/bin/testrunner compile -p vendor/autoload.php
 
 test:
-	vendor/bin/phpunit --colors ./t
+	vendor/bin/phpunit --colors -c ./phpunit.xml
 
 request-test:
 	vendor/bin/phpunit --colors -c ./phpunit_request.xml
