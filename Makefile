@@ -16,5 +16,8 @@ install-dev:
 test:
 	vendor/bin/phpunit --colors ./t
 
+request-test:
+	vendor/bin/phpunit --colors -c ./phpunit_request.xml
+
 testrunner:
 	/bin/sh t/testrunner.sh
