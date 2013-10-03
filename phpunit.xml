@@ -4,4 +4,9 @@
             <directory>./t</directory>
         </testsuite>
     </testsuites>
+    <groups>
+        <exclude>
+            <group>request</group>
+        </exclude>
+    </groups>
 </phpunit>

@@ -1,0 +1,12 @@
+<phpunit colors="true" bootstrap="./t/Request/bootstrap.php">
+    <php>
+        <const name="WEB_SERVER_HOST" value="localhost" />
+        <const name="WEB_SERVER_PORT" value="1348" />
+        <const name="WEB_SERVER_DOCROOT" value="public_html" />
+    </php>
+    <testsuites>
+        <testsuite name="Cosmi front response test suite">
+            <directory>./t/Request</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
